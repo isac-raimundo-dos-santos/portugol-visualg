@@ -1,0 +1,12 @@
+Algoritmo "antecessor-e-sucessor"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Um programa que pede um número, e mostre seu antecessor e sucessor.
+// Autor(a)    : Isac Raimundo
+// Data atual  : 24/11/2020
+Var
+   n1: real
+Inicio
+   escrevaL (" -- Escolha um numero --")
+   leia (n1)
+   escrevaL ("O sucessor do numero", n1, " é", n1 + 1, " e ", "o antecessor é", n1 - 1)
+Fimalgoritmo

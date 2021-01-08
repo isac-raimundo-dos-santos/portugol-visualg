@@ -1,0 +1,17 @@
+Algoritmo "Quarto exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Mostrar a média de um aluno.
+// Autor(a)    : Isac Raimundo
+// Data atual  : 24/11/2020
+Var
+   n1, n2, n3: real
+Inicio
+   escrevaL (" -- Calculador de Média -- ")
+   escrevaL ("primeira nota: ")
+   leia (n1)
+   escrevaL ("Segunda nota:")
+   leia (n2)
+   escrevaL ("Terceira nota:")
+   leia (n3)
+   escrevaL ("Sua média é", (n1 + n2 + n3) / 3)
+Fimalgoritmo

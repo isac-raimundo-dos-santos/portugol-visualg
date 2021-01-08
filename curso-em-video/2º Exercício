@@ -1,0 +1,17 @@
+Algoritmo "Segundo exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Mostrar se o número é par ou ímpar.
+// Autor(a)    : Isac Raimundo
+// Data atual  : 24/11/2020
+Var
+   n1: real
+Inicio
+   escrevaL (" -- Digite um número -- ")
+   leia (n1)
+
+   se (n1 % 2) <> 0 entao
+      escrevaL ("O número", n1, " é ímpar")
+   senao
+      escrevaL ("O número", n1, " é par")
+   fimse
+Fimalgoritmo

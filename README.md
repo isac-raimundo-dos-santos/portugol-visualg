@@ -1,2 +1,3 @@
-# portugol-visualg
+# Potugol Visualg
+
  Curso de portugol e exercicios
