@@ -1,0 +1,14 @@
+Algoritmo "Comparando"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Comprar valores numéricos
+// Autor(a)    : Isac Raimundo
+// Data atual  : 08/01/2021
+Var
+   A, B, C : inteiro
+Inicio
+   A <- 2
+   B <- 3
+   C <- 5
+   escreva (A > B)
+Fimalgoritmo

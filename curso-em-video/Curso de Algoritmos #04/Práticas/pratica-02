@@ -1,0 +1,23 @@
+Algoritmo "triangulos"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Ler tres lados de um triangulo e dizer se ele é equilatero ou escaleno
+// Autor(a)    : Isac Raimundo
+// Data atual  : 08/01/2021
+Var
+   L1, L2, L3 : real
+   EQ, ES, TRI: logico
+Inicio
+   escreva ("Digite o primeiro lado: ")
+   leia (L1)
+   escreva ("Digite o segundo lado: ")
+   leia (L2)
+   escreva ("Digite o segundo lado: ")
+   leia (L3)
+   TRI <- (L1 < L2 + L3) e (L2 < L1 + L3) e (L3 < L1 + L2)
+   EQ <- (L1 = L2) e (L2 = L3)
+   ES <- (L1 <> L2) e (L2 <> L3) e (L1 <> 3)
+   escrevaL ("Pode formar um TRIANGULO? ", TRI)
+   escrevaL ("O triângulo é EQUILATERO? ", EQ)
+   escrevaL ("O triângulo é ESCALENO? ", ES)
+Fimalgoritmo

@@ -1,0 +1,16 @@
+Algoritmo "somar-dois-numeros"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : solicitar dois números para o usuário e motrar a soma entre eles
+// Autor(a)    : Isac Raimundo
+// Data atual  : 20/12/2020
+Var
+   n1, n2 : real
+Inicio
+   escrevaL ("Digite dois números")
+   escreva ("Primeiro número: ")
+   leia (n1)
+   escreva ("Segundo número: ")
+   leia (n2)
+   escreva ("A soma entre", n1, " +", n2, " =", n1 + n2)
+Fimalgoritmo
