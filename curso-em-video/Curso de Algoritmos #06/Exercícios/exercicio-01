@@ -1,0 +1,25 @@
+algoritmo "Creuza 05"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Calcular o juros do imprestimo do banco para Creuza
+// Autor(a)    : Isac Raimundo
+// Data atual  : 21/12/2020
+var
+   emprestimo, juros, parcela, total : real
+   qtd_parcelas : inteiro
+inicio
+   escreva ("Qual valor do emprestimo:")
+   leia (emprestimo)
+
+   juros <- emprestimo * 0.20
+   total <- juros + emprestimo
+
+   escreva ("Quantidade de parcelas:")
+   leia (qtd_parcelas)
+
+   parcela <- total / qtd_parcelas
+
+   escrevaL ("juros:", juros)
+   escrevaL ("Total a pagar:", total)
+   escrevaL ("Parcelado:", parcela)
+fimalgoritmo

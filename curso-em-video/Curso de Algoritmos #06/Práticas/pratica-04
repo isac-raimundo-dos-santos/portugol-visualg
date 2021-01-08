@@ -1,0 +1,16 @@
+Algoritmo "Creuza04"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Calcular o imposto para as coisas da Creuza
+// Autor(a)    : Isac Raimundo
+// Data atual  : 21/12/2020
+Var
+   imposto, valor : real
+Inicio
+   escreva ("Qual foi o valor total?: US$")
+   leia (valor)
+
+   imposto <- (valor *  60) / 100
+
+   escreva ("O imposto vai ser de US$", imposto)
+Fimalgoritmo

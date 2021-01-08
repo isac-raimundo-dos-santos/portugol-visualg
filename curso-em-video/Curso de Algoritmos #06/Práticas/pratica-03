@@ -1,0 +1,16 @@
+Algoritmo "Creuza03"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Conversão de Fahrenheit p/ Celsius para a Creuza
+// Autor(a)    : Isac Raimundo
+// Data atual  : 21/12/2020
+Var
+   f, g : Real
+Inicio
+   escreva ("Quantos ºF(Fahrenheit) está fazendo: ")
+   leia (f)
+
+   g <- (f - 32) * 5/9
+
+   escreval("Em ºG(Graus), vai ser ", g:1:1, "ºC")
+Fimalgoritmo

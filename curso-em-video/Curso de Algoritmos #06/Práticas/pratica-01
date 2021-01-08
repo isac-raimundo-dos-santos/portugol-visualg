@@ -1,0 +1,19 @@
+Algoritmo "Creuza01"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Motrar a idade da creuza
+// Autor(a)    : Isac Raimundo
+// Data atual  : 20/12/2020
+Var
+   AnoA, AnoB, Idade : Inteiro
+Inicio
+      escreva ("Em qual ano estamos? ")
+      leia (AnoA)
+      
+      escreva ("Qual ano você nasceu? ")
+      leia (AnoB)
+
+      Idade <- AnoA - AnoB
+
+      escrevaL ("Você tem", Idade, " anos de idade!")
+Fimalgoritmo

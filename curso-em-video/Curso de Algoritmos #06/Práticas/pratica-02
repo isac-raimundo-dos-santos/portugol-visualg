@@ -1,0 +1,14 @@
+Algoritmo "Creuza02"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Creuza precisa comprar dolares
+// Autor(a)    : Isac Raimundo
+// Data atual  : 20/12/2020
+Var
+   reais : Real
+Inicio
+   escreva ("Quantos REAIS Você tem? R$")
+   leia (reais)
+   
+   escreva ("Com R$", reais, " você consegue US$", reais / 5.10)
+Fimalgoritmo
