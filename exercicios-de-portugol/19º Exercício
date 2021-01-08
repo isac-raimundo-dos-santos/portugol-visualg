@@ -1,0 +1,48 @@
+Algoritmo "Decimo nono Exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Faça um Programa que pergunte em que turno você estuda. Peça para digitar M-matutino ou V-Vespertino ou N- Noturno. Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso.
+// Autor(a)    : Isac Raimundo
+// Data atual  : 18/12/2020
+Var
+   resposta : Caracter
+Inicio
+   escrevaL ("|================================|")
+   escrevaL ("|   Em qual turno você estuda?   |")
+   escrevaL ("|         M - matutino           |")
+   escrevaL ("|         V - Vespertino         |")
+   escrevaL ("|         N - Noturno.           |")
+   escrevaL ("|================================|")
+   escrevaL ("")
+   escreva ("        Resposta: ")
+   leia (resposta)
+   resposta <- Maiusc(resposta)
+   limpatela
+   escrevaL ("|================================|")
+   escrevaL ("|   Em qual turno você estuda?   |")
+   escrevaL ("|         M - matutino           |")
+   escrevaL ("|         V - Vespertino         |")
+   escrevaL ("|         N - Noturno.           |")
+   escrevaL ("|================================|")
+   escolha resposta
+      caso "M"
+         escrevaL ("|                                |")
+         escrevaL ("|          Bom Dia!              |")
+         escrevaL ("|                                |")
+         escrevaL ("|================================|")
+      caso "V"
+         escrevaL ("|                                |")
+         escrevaL ("|          Boa Tarde!            |")
+         escrevaL ("|                                |")
+         escrevaL ("|================================|")
+      caso "N"
+         escrevaL ("|                                |")
+         escrevaL ("|          Boa Noite!            |")
+         escrevaL ("|                                |")
+         escrevaL ("|================================|")
+      outrocaso
+         escrevaL ("|                                |")
+         escrevaL ("|Valor invalido! Tente novamente!|")
+         escrevaL ("|                                |")
+         escrevaL ("|================================|")
+   fimescolha
+Fimalgoritmo

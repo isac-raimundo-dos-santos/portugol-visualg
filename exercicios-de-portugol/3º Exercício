@@ -1,10 +1,10 @@
 Algoritmo "Terceiro exercicio"
 // Disciplina   : [Linguagem e Lógica de Programação]
-// Descrição   : Mostrar o dobro, o triplo e a raiz quadrada de um número.
+// Descrição   : Usuário passa um número e volta o seu dobro, triplo e raiz quadrada
 // Autor(a)    : Isac Raimundo
 // Data atual  : 24/11/2020
 Var
-   n1: real
+   n1 : real
 Inicio
    escrevaL (" -- Escreva um Número --")
    leia (n1)

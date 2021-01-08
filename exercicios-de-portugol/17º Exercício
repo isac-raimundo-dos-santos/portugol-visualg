@@ -1,0 +1,33 @@
+Algoritmo "Decimo setimo Exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Internet
+// Descrição   : Faça um programa que pergunte o preço de três produtos e informe qual produto você deve comprar, sabendo que a decisão é sempre pelo mais barato.
+// Autor(a)    : Isac Raimundo
+// Data atual  : 30/11/2020
+Var
+   p1, p2, p3 : Real
+Inicio
+   escreva ("Informe o preço do")
+   escreva (" Primeiro produto: R$ ")
+   leia (p1)
+   escreva ("Segundo produto: R$ ")
+   leia (p2)
+   escreva ("Terceiro produto: R$ ")
+   leia (p3)
+   limpatela
+   se (p1 < p2) e (p1 < p3) entao
+      escrevaL ("=========================================================")
+      escrevaL ("O primeiro produto com o valor de R$", p1, " é o mais barato")
+      escrevaL ("=========================================================")
+   senao
+      se (p2 < p1) e (p2 < p3) entao
+         escrevaL ("=========================================================")
+         escrevaL ("O segundo produto com o valor de R$", p2, " é o mais barato")
+         escrevaL ("=========================================================")
+      senao
+         escrevaL ("=========================================================")
+         escrevaL ("O terceiro produto com o valor de R$", p3, " é o mais barato")
+         escrevaL ("=========================================================")
+      fimse
+   fimse
+Fimalgoritmo

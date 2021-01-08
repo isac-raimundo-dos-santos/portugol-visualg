@@ -1,0 +1,27 @@
+algoritmo "Decimo primeiro exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Faça um Programa que peça dois números e imprima o maior deles.
+// Autor(a)    : Isac Raimundo
+// Data atual  : 26/11/2020
+var
+   n1, n2 : real
+inicio
+   escreva ("Digite um número: ")
+   leia (n1)
+   escreva ("Digite outro número: ")
+   leia (n2)
+
+   se (n1 <> falso) e (n2 <> falso) entao
+      se (n1 > n2) entao
+         escrevaL ("O número", n1, " é maior que que o número", n2,"!")
+      senao
+         se (n2 > n1) entao
+            escrevaL ("O número", n2, " é maior que que o número", n1,"!")
+         senao
+            escrevaL ("OS dois numeros são iguais, logo nenhum é maior.")
+         fimse
+      fimse
+   senao
+      escrevaL ("Isso NÃO é um número! Tente novamente!")
+   fimse
+fimalgoritmo

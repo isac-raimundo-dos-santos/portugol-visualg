@@ -1,0 +1,18 @@
+Algoritmo "Quinto exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Usuário passa um valor em reais e volta o valor em dólar americano, canadense e euro
+// Autor(a)    : Isac Raimundo
+// Data atual  : 24/11/2020
+Var
+   R, am, ca, eu : real
+Inicio
+   escrevaL (" -- Conversor de Moeda -- ")
+   escrevaL (" Valor em Reais: ")
+   leia (R)
+   am <- R / 5.37
+   ca <- R / 4.06
+   eu <- R / 5.31
+   escrevaL ("R$" ,R:1:2 ," Em dólar Americano é: US$ ", am:1:2)
+   escrevaL ("R$" ,R:1:2 ," Em dólar Canadense é:  $ ", ca:1:2)
+   escrevaL ("R$" ,R:1:2 ," Em Euro é: € ", eu:1:2 )
+Fimalgoritmo

@@ -1,0 +1,20 @@
+Algoritmo "Sexto exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias
+// Autor(a)    : Isac Raimundo
+// Data atual  : 25/11/2020
+Var
+   total, idade, ano, mes, dia : inteiro
+Inicio
+   escrevaL ("Qual ano você nasceu? ")
+   leia (ano)
+   escrevaL ("Qual mês você nasceu? ")
+   leia (mes)
+   escrevaL ("Qual dia você nasceu? ")
+   leia (dia)
+   idade <- 2020 - ano
+   idade <- idade * 365
+   mes <- mes * 31
+   total <- idade + mes + dia
+   escrevaL ("Parabens! Você ja viveu", total, " dias")
+Fimalgoritmo

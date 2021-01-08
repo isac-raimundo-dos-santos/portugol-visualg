@@ -1,0 +1,41 @@
+Algoritmo "Decimo quinto exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Faça um Programa que leia três números e mostre o maior deles.
+// Autor(a)    : Isac Raimundo
+// Data atual  : 29/11/2020
+Var
+   n1, n2, n3 : real
+Inicio
+   escrevaL ("Digite o Primeiro Número: ")
+   leia (n1)
+   escrevaL ("Digite o Segundo Número: ")
+   leia (n2)
+   escrevaL ("Digite o Terceiro Número: ")
+   leia (n3)
+   limpatela
+   escrevaL ("|===================================|")
+   escrevaL ("|             Resultado             |")
+   escrevaL ("|===================================|")
+   se (n1 > n2) e (n1 > n3) entao
+      se (n2 < n3) entao
+         escrevaL ("", n1, " é o maior número e", n2, " é o menor ")
+      senao
+         escrevaL ("", n1, " é o maior número e", n3, " é o menor ")
+      fimse
+   senao
+      se (n2 > n1) e (n2 > n3) entao
+         se (n1 < n3) entao
+            escrevaL ("", n2, " é o maior número e", n1, " é o menor ")
+         senao
+            escrevaL ("", n2, " é o maior número e", n3, " é o menor ")
+         fimse
+      senao
+         se (n1 < n2) entao
+            escrevaL ("", n3, " é o maior número e", n1, " é o menor ")
+         senao
+            escrevaL ("", n3, " é o maior número e", n2, " é o menor ")
+         fimse
+      fimse
+   fimse
+   escrevaL ("|===================================|")
+Fimalgoritmo

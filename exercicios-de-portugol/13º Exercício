@@ -1,0 +1,16 @@
+Algoritmo "Decimo terceiro exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Faça um Programa que verifique se uma letra digitada é vogal ou consoante.
+// Autor(a)    : Isac Raimundo
+// Data atual  : 27/11/2020
+Var
+   L : caracter
+Inicio
+   escreva ("Digite uma letra: ")
+   leia (L)
+   se (L = "a") ou (L = "e") ou (L = "i") ou (L = "o") ou (L = "u") entao
+      escrevaL ("A letra ", L, " é vogal")
+   senao
+      escrevaL ("A letra ", L, " é consoante")
+   fimse
+Fimalgoritmo

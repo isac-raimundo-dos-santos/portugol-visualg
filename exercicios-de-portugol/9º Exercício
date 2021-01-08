@@ -1,0 +1,20 @@
+Algoritmo "Nono exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Algoritmo que pergunte minha idade para saber se sou obrigado a votar, se não posso votar ou se é opcional
+// Autor(a)    : Isac Raimundo
+// Data atual  : 26/11/2020
+Var
+   idade : inteiro
+Inicio
+   escreva ("Qual sua idade? ")
+   leia (idade)
+   se (idade < 16) entao
+      escreval ("Você tem", idade, " ano(s) de idade. Você ainda NÂO pode votar!")
+   senao
+      se (idade <= 17) ou (idade > 70) entao
+         escreval ("Você tem", idade, " ano(s) de idade. Seu voto é OPCIONAL!")
+      senao
+         escreval ("Você tem", idade, " ano(s) de idade. Você é OBRIGADO(por lei) a votar!")
+      fimse
+   fimse
+Fimalgoritmo

@@ -1,0 +1,22 @@
+Algoritmo "Decimo segundo exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
+// Autor(a)    : Isac Raimundo
+// Data atual  : 26/11/2020
+Var
+   v1 : real
+Inicio
+   escreva ("Digite um número: ")
+   leia (v1)
+   se (v1 = verdadeiro) entao
+      se (v1 > 0) entao
+         escrevaL ("O número", v1, " é positivo")
+      senao
+         se (v1 < 0) entao
+            escrevaL ("O número", v1, " é negativo")
+         senao
+            escrevaL ("0, não é positivo nem negativo, já que não é maior nem menor que si mesmo.")
+         fimse
+      fimse
+   fimse
+Fimalgoritmo

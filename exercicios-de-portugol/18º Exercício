@@ -1,0 +1,511 @@
+Algoritmo "Decimo oitavo exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   :  Faça um Programa que leia cinco números e mostre-os em ordem decrescente.
+// Autor(a)    : Isac Raimundo
+// Data atual  : 30/11/2020
+Var
+   n1, n2, n3, n4, n5 : real
+Inicio
+   escrevaL ("|===============================================================|")
+   escrevaL ("|  Escreva 5 números e eu colocarei eles em ordem descrescente  |")
+   escrevaL ("|===============================================================|")
+
+   escrevaL ("")
+
+   escrevaL ("              ===================================")
+   escrevaL ("                 Digite o primeiro número: ")
+   leia (n1)
+   escrevaL ("                 Digite o segundo  número: ")
+   leia (n2)
+   escrevaL ("                 Digite o terceiro número: ")
+   leia (n3)
+   escrevaL ("                 Digite o quarto   número: ")
+   leia (n4)
+   escrevaL ("                 Digite o quinto   número: ")
+   leia (n5)
+   escrevaL ("              ===================================")
+
+   limpatela
+   escrevaL ("                         |============|")
+   escrevaL ("                         |  RESULTADO |")
+   escrevaL ("                         |============|")
+   escrevaL ("")
+
+   se (n1 > n2) e (n1 > n3) e (n1 > n4) e (n1 > n5) entao
+      se (n2 > n3) e (n2 > n4) e (n2 > n5) entao
+         se (n3 > n4) e (n3 > n5) entao
+            se (n4 > n5) entao
+               escrevaL (n1,n2,n3,n4,n5)
+            senao
+               escrevaL (n1,n2,n3,n5,n4)
+            fimse
+         senao
+            se (n4 > n3) e (n4 > n5) entao
+               se (n3 > n5) entao
+                  escrevaL (n1,n2,n4,n3,n5)
+               senao
+                  escrevaL (n1,n2,n4,n5,n3)
+               fimse
+            senao
+               se (n3 > n4) entao
+                  escrevaL (n1,n2,n5,n3,n4)
+               senao
+                  escrevaL (n1,n2,n5,n4,n3)
+               fimse
+            fimse
+         fimse
+      senao
+         se (n3 > n2) e (n3 > n4) e (n3 > n5) entao
+            se (n2 > n4) e (n2 > n5) entao
+               se (n4 > n5) entao
+                  escrevaL (n1,n3,n2,n4,n5)
+               senao
+                  escrevaL (n1,n3,n2,n5,n4)
+               fimse
+            senao
+               se (n4 > n2) e (n4 > n5) entao
+                  se (n2 > n5) entao
+                     escrevaL (n1,n3,n4,n2,n5)
+                  senao
+                     escrevaL (n1,n3,n4,n5,n2)
+                  fimse
+               senao
+                  se (n4 > n2) entao
+                     escrevaL (n1,n3,n5,n4,n2)
+                  senao
+                     escrevaL (n1,n3,n5,n2,n4)
+                  fimse
+               fimse
+            fimse
+         senao
+            se (n4 > n2) e (n4 > n3) e (n4 > n5) entao
+               se (n2 > n3) e (n2 > n5) entao
+                  se (n3 > n5) entao
+                     escrevaL (n1,n4,n2,n3,n5)
+                  senao
+                     escrevaL (n1,n4,n2,n5,n3)
+                  fimse
+               senao
+                  se (n3 > n2) e (n3 > n5) entao
+                     se (n2 > n5) entao
+                        escrevaL (n1,n4,n3,n2,n5)
+                     senao
+                        escrevaL (n1,n4,n3,n5,n2)
+                     fimse
+                  senao
+                     se (n2 > n3) entao
+                        escrevaL (n1,n4,n5,n2,n3)
+                     senao
+                        escrevaL (n1,n4,n5,n3,n2)
+                     fimse
+                  fimse
+               fimse
+            senao
+               se (n2 > n3) e (n2 > n4) entao
+                  se (n3 > n4) entao
+                     escrevaL (n1,n5,n2,n3,n4)
+                  senao
+                     escrevaL (n1,n5,n2,n4,n3)
+                  fimse
+               senao
+                  se (n3 > n2) e (n3 > n4) entao
+                     se (n2 > n4) entao
+                        escrevaL (n1,n5,n3,n2,n4)
+                     senao
+                        escrevaL (n1,n5,n3,n4,n2)
+                     fimse
+                  senao
+                     se (n2 > n3) entao
+                        escrevaL (n1,n5,n4,n2,n3)
+                     senao
+                        escrevaL (n1,n5,n4,n3,n2)
+                     fimse
+                  fimse
+               fimse
+            fimse
+         fimse
+      fimse
+   senao
+      se (n2 > n1) e (n2 > n3) e (n2 > n4) e (n2 > n5) entao
+         se (n1 > n3) e (n1 > n4) e (n1 > n5) entao
+            se (n3 > n4) e (n3 > n5) entao
+               se (n4 > n5) entao
+                  escrevaL (n2,n1,n3,n4,n5)
+               senao
+                  escrevaL (n2,n1,n3,n5,n4)
+               fimse
+            senao
+               se (n4 > n3) e (n4 > 5) entao
+                  se (n3 > n5) entao
+                     escrevaL (n2,n1,n4,n3,n5)
+                  senao
+                     escrevaL (n2,n1,n4,n5,n3)
+                  fimse
+               senao
+                  se (n3 > n4) entao
+                     escrevaL (n2,n1,n5,n3,n4)
+                  senao
+                     escrevaL (n2,n1,n5,n4,n3)
+                  fimse
+               fimse
+            fimse
+         senao
+            se (n3 > n1) e (n3 > n4) e (n3 > n5) entao
+               se (n1 > n4) e (n1 > n5) entao
+                  se (n4 > n5) entao
+                     escrevaL (n2,n3,n1,n4,n5)
+                  senao
+                     escrevaL (n2,n3,n1,n5,n4)
+                  fimse
+               senao
+                  se (n4 > n1) e (n4 > n5) entao
+                     se (n1 > n5) entao
+                        escrevaL (n2,n3,n4,n1,n5)
+                     senao
+                        escrevaL (n2,n3,n4,n5,n1)
+                     fimse
+                  senao
+                     se (n1 > n4) entao
+                        escrevaL (n2,n3,n5,n1,n4)
+                     senao
+                        escrevaL (n2,n3,n5,n5,n1)
+                     fimse
+                  fimse
+               fimse
+            senao
+               se (n4 > n1) e (n4 > n3) e (n4 > n5) entao
+                  se (n1 > n3) e (n1 > n5) entao
+                     se (n3 > n5) entao
+                        escrevaL (n2,n4,n1,n3,n5)
+                     senao
+                        escrevaL (n2,n4,n1,n5,n3)
+                     fimse
+                  senao
+                     se (n3 > n1) e (n3 > n5) entao
+                        se (n1 > n5) entao
+                           escrevaL (n2,n4,n3,n1,n5)
+                        senao
+                           escrevaL (n2,n4,n3,n5,n1)
+                        fimse
+                     senao
+                        se (n1 > n3) entao
+                           escrevaL (n2,n4,n5,n1,n3)
+                        senao
+                           escrevaL (n2,n4,n5,n3,n1)
+                        fimse
+                     fimse
+                  fimse
+               senao
+                  se (n1 > n3) e (n1 > n4) entao
+                     se (n3 > n4) entao
+                        escrevaL (n2,n5,n1,n3,n4)
+                     senao
+                        escrevaL (n2,n5,n1,n4,n3)
+                     fimse
+                  senao
+                     se (n3 > n1) e (n3 > n4) entao
+                        se (n1 > n4)entao
+                           escrevaL (n2,n5,n3,n1,n4)
+                        senao
+                           escrevaL (n2,n5,n3,n4,n1)
+                        fimse
+                     senao
+                        se (n1 > n3) entao
+                           escrevaL (n2,n5,n4,n1,n3)
+                        senao
+                           escrevaL (n2,n5,n4,n3,n1)
+                        fimse
+                     fimse
+                  fimse
+               fimse
+            fimse
+         fimse
+      senao
+         se (n3 > n1) e (n3 > n2) e (n3 > n4) e (n3 > n5) entao
+            se (n1 > n2) e (n1 > n4) e (n1 > n5) entao
+               se (n2 > n4) e (n2 > n5) entao
+                  se (n4 > n5) entao
+                     escrevaL (n3,n1,n2,n4,n5)
+                  senao
+                     escrevaL (n3,n1,n2,n5,n4)
+                  fimse
+               senao
+                  se (n4 > n2) e (n4 > n5) entao
+                     se (n2 > n5) entao
+                        escrevaL (n3,n1,n4,n2,n5)
+                     senao
+                        escrevaL (n3,n1,n4,n5,n2)
+                     fimse
+                  senao
+                     se (n2 > n4) entao
+                        escrevaL (n3,n1,n5,n2,n4)
+                     senao
+                        escrevaL (n3,n1,n5,n4,n2)
+                     fimse
+                  fimse
+               fimse
+            senao
+               se (n2 > n1) e (n2 > n4) e (n2 > n5) entao
+                  se (n1 > n4) e (n1 > n5) entao
+                     se (n4 > n5) entao
+                        escrevaL (n3,n2,n1,n4,n5)
+                     senao
+                        escrevaL (n3,n2,n1,n5,n4)
+                     fimse
+                  senao
+                     se (n4 > n1) e (n4 > n5) entao
+                        se (n1 > n5) entao
+                           escrevaL (n3,n2,n4,n1,n5)
+                        senao
+                           escrevaL (n3,n2,n4,n5,n1)
+                        fimse
+                     senao
+                        se (n1 > n4) entao
+                           escrevaL (n3,n2,n5,n1,n4)
+                        senao
+                           escrevaL (n3,n2,n5,n4,n1)
+                        fimse
+                     fimse
+                  fimse
+               senao
+                  se (n4 > n1) e (n4 > n2) e (n4 > n5) entao
+                     se (n1 > n2) e (n1 > n5) entao
+                        se (n2 > n5) entao
+                           escrevaL (n3,n4,n1,n2,n5)
+                        senao
+                           escrevaL (n3,n4,n1,n5,n2)
+                        fimse
+                     senao
+                        se (n2 > n1) e (n2 > n5) entao
+                           se (n1 > n5) entao
+                              escrevaL (n3,n4,n2,n1,n5)
+                           senao
+                              escrevaL (n3,n4,n2,n5,n1)
+                           fimse
+                        senao
+                           se (n1 > n2) entao
+                              escrevaL (n3,n4,n5,n1,n2)
+                           senao
+                              escrevaL (n3,n4,n5,n2,n1)
+                           fimse
+                        fimse
+                     fimse
+                  senao
+                     se (n1 > n2) e (n1 > n4) entao
+                        se (n2 > n4) entao
+                           escrevaL (n3,n5,n1,n2,n4)
+                        senao
+                           escrevaL (n3,n5,n1,n4,n2)
+                        fimse
+                     senao
+                        se (n2 > n1) e (n2 > n4) entao
+                           se (n1 > n4) entao
+                              escrevaL (n3,n5,n2,n1,n4)
+                           senao
+                              escrevaL (n3,n5,n2,n4,n1)
+                           fimse
+                        senao
+                           se (n1 > n2) entao
+                              escrevaL (n3,n5,n4,n1,n2)
+                           senao
+                              escrevaL (n3,n5,n4,n2,n1)
+                           fimse
+                        fimse
+                     fimse
+                  fimse
+               fimse
+            fimse
+         senao
+            se (n4 > n1) e (n4 > n2) e (n4 > n3) e (n4 > n5) entao
+               se (n1 > n2) e (n1 > n3) e (n1 > n5) entao
+                  se (n2 > n3) e (n2 > n5) entao
+                     se (n3 > n5) entao
+                        escrevaL (n4,n1,n2,n3,n5)
+                     senao
+                        escrevaL (n4,n1,n2,n5,n3)
+                     fimse
+                  senao
+                     se (n3 > n2) e (n3 > n5) entao
+                        se (n2 > n5) entao
+                           escrevaL (n4,n1,n3,n2,n5)
+                        senao
+                           escrevaL (n4,n1,n3,n5,n2)
+                        fimse
+                     senao
+                        se (n2 > n3) entao
+                           escrevaL (n4,n1,n5,n2,n3)
+                        senao
+                           escrevaL (n4,n1,n5,n3,n2)
+                        fimse
+                     fimse
+                  fimse
+               senao
+                  se (n2 > n1) e (n2 > n3) e (n2 > n5) entao
+                     se (n1 > n3) e (n1 > n5) entao
+                        se (n3 > n5) entao
+                           escrevaL (n4,n2,n1,n3,n5)
+                        senao
+                           escrevaL (n4,n2,n1,n5,n3)
+                        fimse
+                     senao
+                        se (n3 > n1) e (n3 > n5) entao
+                           se (n1 > n5) entao
+                              escrevaL (n4,n2,n3,n1,n5)
+                           senao
+                              escrevaL (n4,n2,n3,n5,n1)
+                           fimse
+                        senao
+                           se (n1 > n3) entao
+                              escrevaL (n4,n2,n5,n1,n3)
+                           senao
+                              escrevaL (n4,n2,n5,n3,n1)
+                           fimse
+                        fimse
+                     fimse
+                  senao
+                     se (n3 > n1) e (n3 > n2) e (n3 > n5) entao
+                        se (n1 > n2) e (n1 > n5) entao
+                           se (n2 > n5) entao
+                              escrevaL (n4,n3,n1,n2,n5)
+                           senao
+                              escrevaL (n4,n3,n1,n5,n2)
+                           fimse
+                        senao
+                           se (n2 > n1) e (n2 > n5) entao
+                              se (n1 > n5) entao
+                                 escrevaL (n4,n3,n2,n1,n5)
+                              senao
+                                 escrevaL (n4,n3,n2,n5,n1)
+                              fimse
+                           senao
+                              se (n1 > n2) entao
+                                 escrevaL (n4,n3,n5,n1,n2)
+                              senao
+                                 escrevaL (n4,n3,n5,n2,n1)
+                              fimse
+                           fimse
+                        fimse
+                     senao
+                        se (n1 > n2) e (n1 > n3) entao
+                           se (n2 > n3) entao
+                              escrevaL (n4,n5,n1,n2,n3)
+                           senao
+                              escrevaL (n4,n5,n1,n3,n2)
+                           fimse
+                        senao
+                           se (n2 > n1) e (n2 > n3) entao
+                              se (n1 > n3) entao
+                                 escrevaL (n4,n5,n2,n1,n3)
+                              senao
+                                 escrevaL (n4,n5,n2,n3,n1)
+                              fimse
+                           senao
+                              se (n1 > n2) entao
+                                 escrevaL (n4,n5,n3,n1,n2)
+                              senao
+                                 escrevaL (n4,n5,n3,n2,n1)
+                              fimse
+                           fimse
+                        fimse
+                     fimse
+                  fimse
+               fimse
+            senao
+               se (n1 > n2) e (n1 > n3) e (n1 > n4) entao
+                  se (n2 > n3) e (n2 > n4) entao
+                     se (n3 > n4) entao
+                        escrevaL (n5,n1,n2,n3,n4)
+                     senao
+                        escrevaL (n5,n1,n2,n4,n3)
+                     fimse
+                  senao
+                     se (n3 > n2) e (n3 > n4) entao
+                        se (n2 > n4) entao
+                           escrevaL (n5,n1,n3,n2,n4)
+                        senao
+                           escrevaL (n5,n1,n3,n4,n2)
+                        fimse
+                     senao
+                        se (n2 > n3) entao
+                           escrevaL (n5,n1,n4,n2,n3)
+                        senao
+                           escrevaL (n5,n1,n4,n3,n2)
+                        fimse
+                     fimse
+                  fimse
+               senao
+                  se (n2 > n1) e (n2 > n3) e (n2 > n4) entao
+                     se (n1 > n3) e (n1 > n4) entao
+                        se (n3 > n4) entao
+                           escrevaL (n5,n2,n1,n3,n4)
+                        senao
+                           escrevaL (n5,n2,n1,n4,n3)
+                        fimse
+                     senao
+                        se (n3 > n1) e (n3 > n4) entao
+                           se (n1 > n4) entao
+                              escrevaL (n5,n2,n3,n1,n4)
+                           senao
+                              escrevaL (n5,n2,n3,n4,n1)
+                           fimse
+                        senao
+                           se (n1 > n3) entao
+                              escrevaL (n5,n2,n4,n1,n3)
+                           senao
+                              escrevaL (n5,n2,n4,n1,n3)
+                           fimse
+                        fimse
+                     fimse
+                  senao
+                     se (n3 > n1) e (n3 > n2) e (n3 > n4) entao
+                        se (n1 > n2) e (n1 > n4) entao
+                           se (n2 > n4) entao
+                              escrevaL  (n5,n3,n1,n2,n4)
+                           senao
+                              escrevaL  (n5,n3,n1,n4,n2)
+                           fimse
+                        senao
+                           se (n2 > n1) e (n2 > n4) entao
+                              se (n1 > n4) entao
+                                 escrevaL (n5,n3,n2,n1,n4)
+                              senao
+                                 escrevaL (n5,n3,n2,n4,n1)
+                              fimse
+                           senao
+                              se (n1 > n2) entao
+                                 escrevaL (n5,n3,n4,n1,n2)
+                              senao
+                                 escrevaL (n5,n3,n4,n2,n1)
+                              fimse
+                           fimse
+                        fimse
+                     senao
+                        se (n1 > n2) e (n1 > n3) entao
+                           se (n2 > n3) entao
+                              escrevaL (n5,n4,n1,n2,n3)
+                           senao
+                              escrevaL (n5,n4,n1,n3,n2)
+                           fimse
+                        senao
+                           se (n2 > n1) e (n2 > n3) entao
+                              se (n1 > n3) entao
+                                 escrevaL (n5,n4,n2,n1,n3)
+                              senao
+                                 escrevaL (n5,n4,n2,n3,n1)
+                              fimse
+                           senao
+                              se (n1 > n2) entao
+                                 escrevaL (n5,n4,n3,n1,n2)
+                              senao
+                                 escrevaL (n5,n4,n3,n2,n1)
+                              fimse
+                           fimse
+                        fimse
+                     fimse
+                  fimse
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+Fimalgoritmo

@@ -1,0 +1,17 @@
+Algoritmo "Decimo exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Faça um Programa que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não bissexto. 
+// Autor(a)    : Isac Raimundo
+// Data atual  : 26/11/2020
+Var
+   ano: inteiro
+Inicio
+   escrevaL (" -- Vou dizer se um ano é bisexto ou não -- ")
+   escreva (" Digite um ano: ")
+   leia (ano)
+   se (ano % 400 = 0) ou (ano % 4 = 0) e (ano % 100 <> 0) entao
+      escrevaL ("O ano", ano, " é bissexto (tem 366 dias).")
+   senao
+      escrevaL ("O ano", ano, " não é um ano bissexto (tem 365 dias).")
+   fimse
+Fimalgoritmo
