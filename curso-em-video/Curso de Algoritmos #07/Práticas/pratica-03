@@ -1,0 +1,23 @@
+algoritmo "CalculoDeIMC"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Guanabara
+// Descrição   : Calcular imc
+// Autor(a)    : Isac Raimundo
+// Data atual  : 21/12/2020
+var
+   p, a, imc : Real
+inicio
+   escreva ("Digite seu peso (KL): ")
+   leia (p)
+   
+   escreva ("Digite sua altura (M): ")
+   leia (a)
+
+   imc <- p / (a ^ 2)
+
+   se (imc >= 18.5) e (imc < 25) entao
+      escreva  ("Seu IMC é de ", imc:1:1, ", e você está no peso ideal!")
+   senao
+      escreva ("Seu IMC é de ", imc:1:1, ", e você está fora do peso!")
+   fimse
+fimalgoritmo

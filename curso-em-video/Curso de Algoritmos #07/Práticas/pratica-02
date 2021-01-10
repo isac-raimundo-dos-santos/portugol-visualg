@@ -1,19 +1,18 @@
-algoritmo "calculoIdade"
+Algoritmo "par-ou-impar"
 // Disciplina   : [Linguagem e Lógica de Programação]
-// Professor   : Gustavo Guanabara
-// Descrição   : Aprimorando o algoritmo de idade
+// Professor   : Gustavo guanabara
+// Descrição   : Pergunte um número para o usuário, e mostre se o número é par ou ímpar.
 // Autor(a)    : Isac Raimundo
-// Data atual  : 21/12/2020
-var
-   ano, nasc, idade : inteiro
-inicio
-   escreva ("Em que ano estamos? ")
-   leia (ano)
-   escreva ("Em que ano voce nasceu? ")
-   leia (nas)
-   idade <- ano - nasc
-   escreva ("Em", ano, " voce tera", idade, " anos")
-   se (idade >= 21) entao
-      escrevaL ("E ja tera atingido a maioridade.")
+// Data atual  : 10/01/2021
+Var
+   n : real
+Inicio
+   escreva ("Digite um número: ")
+   leia (n)
+
+   se (n % 2 = 0) entao
+      escreva ("O número", n, " é PAR")
+   senao
+      escreva ("O número", n, " é IMPAR")
    fimse
-fimalgoritmo
+Fimalgoritmo

@@ -1,0 +1,34 @@
+Algoritmo "aprovado-ou-reprovado?"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Verificar se um aluno teve a nota necessária para passar de ano
+// Autor(a)    : Isac Raimundo
+// Data atual  : 05/12/2020
+Var
+   M, PN, SN : REAL
+Inicio
+   escrevaL ("-----------------")
+   escrevaL ("  MÉDIA ESCOLAR  ")
+   escrevaL ("-----------------")
+   escrevaL ("")
+
+   escreva ("Primeira nota: ")
+   leia (PN)
+
+   escreva ("Segunda nota: ")
+   leia (SN)
+
+   M <- (PN + SN) / 2
+
+   se (M >= 5) entao
+      escrevaL ("-----------------")
+      escrevaL (" ALUNO APROVADO"  )
+      escrevaL (" MEDIA: ", M:1:1  )
+      escrevaL ("-----------------")
+   senao
+      escrevaL ("-----------------")
+      escrevaL (" ALUNO REPROVADO" )
+      escrevaL (" MEDIA: ", M:1:1  )
+      escrevaL ("-----------------")
+   fimse
+Fimalgoritmo

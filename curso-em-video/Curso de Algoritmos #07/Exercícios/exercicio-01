@@ -1,0 +1,35 @@
+Algoritmo "Esta apto a dirigir?"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Verificar se o usuário tem a idade necessaria para tirar a carteira de habilitação
+// Autor(a)    : Isac Raimundo
+// Data atual  : 05/12/2020
+Var
+   ano, idade, anoS: Real
+Inicio
+   escrevaL ("------------------------")
+   escrevaL ("DEPARTAMENTO DE TRANSITO")
+   escrevaL ("------------------------")
+
+   escreva ("Em quando ano estamos? (yyyy): ")
+   leia(ano)
+
+   escreva ("Em que ano você nasceu? (yyyy): ")
+   leia(anoS)
+
+   idade <- ano - anoS
+   limpatela
+
+   escrevaL ("------------------------")
+   escrevaL ("DEPARTAMENTO DE TRANSITO")
+   escrevaL ("------------------------")
+   escrevaL ("IDADE: ", idade)
+   
+   se (idade >=  18) entao
+      escrevaL ("APTO A TIRAR CARTEIRA")
+   senao
+      escrevaL ("INAPTO DE TIRAR A CARTEIRA")
+   fimse
+
+   escreval("------------------------")
+Fimalgoritmo
