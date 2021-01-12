@@ -1,0 +1,31 @@
+Algoritmo "jogo-de-futebol"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Uma partida de futebol
+// Autor(a)    : Isac Raiundo
+// Data atual  : 12/01/2021
+Var
+   TIME1, TIME2, DIF : caractere
+   STATUS : inteiro
+Inicio
+   escreva ("Primeiro TIME: ")
+   leia (TIME1)
+
+   escreva ("Segundo TIME: ")
+   leia (TIME2)
+
+   TIME1 <- maiusc(TIME1)
+   TIME2 <- maiusc(TIME2)
+   limpatela
+
+   escrevaL ("   ", TIME1, " X ", TIME2)
+   escrevaL ("-----------------------")
+   escrevaL ("Quantos gols do ", TIME1, "? ")
+   escrevaL ("Quantos gols do ", TIME2, "? ")
+   escrevaL ("-----------------------")
+   
+   STATUS <- TIME1 - TIME2
+   
+   escrevaL (" DIFERENÇA: ", STATUS)
+   escrevaL (" STATUS: ")
+Fimalgoritmo

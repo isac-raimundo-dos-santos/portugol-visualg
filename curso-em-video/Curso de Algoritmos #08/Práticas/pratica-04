@@ -1,0 +1,33 @@
+Algoritmo "Dependentes-funcionario"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Quantidade de dependentes de um funcionário
+// Autor(a)    : Isac Raiundo
+// Data atual  : 12/01/2021
+Var
+   nome : caractere
+   sal, nsal : real
+   dep : inteiro
+Inicio
+   escreva ("Qual o nome do Funcionário? : ")
+   leia (nome)
+
+   escreva ("Qual o sálario do Funcionário? R$")
+   leia (sal)
+   
+   escreval ("Qual e a quantidade de dependentes? : ")
+   leia (dep)
+   
+   escolha dep
+       caso 0
+          nsal <- sal + (sal*5/100)
+       caso 1, 2, 3
+          nsal <- sal + (sal*10/100)
+       caso 4, 5, 6
+          nsal <- sal + (sal*15/100)
+       outroCaso
+          nsal <- sal + (sal*18/100)
+   fimEscolha
+   
+   escrevaL ("O novo salário de ", nome, " sera de R$ ", sal:5:2)
+Fimalgoritmo

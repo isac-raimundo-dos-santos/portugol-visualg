@@ -1,0 +1,45 @@
+algoritmo "nota-escolar"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : aproveitamento de um aluno
+// Autor(a)    : Isac Raiundo
+// Data atual  : 12/01/2021
+var
+   nota1, nota2, median : real
+   medial : caractere
+inicio
+   escreva ("Primeira nota: ")
+   leia (nota1)
+   
+   escreva ("Segunda nota: ")
+   leia (nota2)
+
+   median <- (nota1 + nota2) / 2
+
+   se (median >= 9) e (median <= 10) entao
+      medial <- "A"
+   senao
+      se (median >= 8) e (median <= 8.9) entao
+         medial <- "B"
+      senao
+         se (median >= 7) e (median <= 7.9) entao
+            medial <- "C"
+         senao
+            se (median >= 6) e (median <= 6.9) entao
+               medial <- "D"
+            senao
+               se (median >= 5) e (median <= 5.9) entao
+                  medial <- "E"
+               senao
+                  se (median < 500) entao
+                     medial <- "F"
+                  fimse
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+
+   escrevaL ("MEDIA:", median)
+   escrevaL ("APROVEITAMENTO: ", medial)
+fimalgoritmo
