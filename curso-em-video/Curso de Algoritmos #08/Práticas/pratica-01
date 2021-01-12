@@ -1,0 +1,28 @@
+Algoritmo "Media-escolar"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Aluno aprovado, reprovado ou em recuperação
+// Autor(a)    : Isac Raimundo
+// Data atual  : 12/01/2021
+Var
+   n1, n2, media : real
+Inicio
+   escreva ("Digite a primeiro nota: ")
+   leia (n1)
+
+   escreva ("Digite a segunda nota: ")
+   leia (n2)
+
+   media <- (n1 + n2) / 2
+   escrevaL ("Sua média é ", media:4:2)
+   
+   se (media >= 6.5) e (media <= 10) entao
+      escrevaL ("Aprovado")
+   senao
+      se (media >= 4) e (media < 6.5) entao
+         escrevaL ("Recuperação")
+      senao
+         escrevaL ("Reprovado")
+      fimse
+   fimse
+Fimalgoritmo
