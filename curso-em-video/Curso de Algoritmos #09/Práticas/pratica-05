@@ -1,0 +1,20 @@
+Algoritmo "conversor-de-moedas"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Converter reais para dolares 4x
+// Autor(a)    : Isac Raimundo
+// Data atual  : 14/01/2020
+Var
+   reais, dolar : real
+   contador : inteiro
+Inicio
+   enquanto (contador <= 4) faca
+      escreva ("Quantos REAIS Você tem? R$")
+      leia (reais)
+
+      dolar <- reais/ 5.10
+      escrevaL ("Com R$", reais, " você consegue US$", dolar:5:2)
+
+      contador <- contador + 1
+   fimEnquanto
+Fimalgoritmo

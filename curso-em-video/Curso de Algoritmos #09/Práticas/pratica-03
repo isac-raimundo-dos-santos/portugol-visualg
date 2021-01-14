@@ -1,0 +1,19 @@
+Algoritmo "0-a-X"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : contar de 0 até onde o usuário quiser
+// Autor(a)    : Isac Raiundo
+// Data atual  : 14/01/2021
+Var
+   N, X : inteiro
+Inicio
+   escreva ("Digite um número: ")
+   leia (X)
+   
+   N <- 0
+   
+   enquanto (N <= X) faca
+      escrevaL (N)
+      N <- N + 1
+   fimEnquanto
+Fimalgoritmo

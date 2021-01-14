@@ -1,0 +1,41 @@
+Algoritmo "vem-pro-fut"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Uma partida de futebol
+// Autor(a)    : Isac Raiundo
+// Data atual  : 12/01/2021
+Var
+   time1, time2, dif : inteiro
+   stat : caractere
+Inicio
+   escrevaL ("   BANGU X MADUREIRA   ")
+   escrevaL ("-----------------------")
+
+   escreva ("Quantos gols fez o primeiro TIME: ")
+   leia (time1)
+
+   escreva ("Quantos gols fez o segundo TIME: ")
+   leia (time2)
+   
+   escrevaL ("-----------------------")
+
+   se (time1 > time2) entao
+      dif <- time1 - time2
+   seNao
+      dif <- time2 - time1
+   fimSe
+
+   se (dif > 0) e (dif < 3) entao
+      stat <- "Partida NORMAL"
+   seNao
+      se (dif >= 3) entao
+         stat <- "GOLEADA"
+      senao
+         stat <- "EMPATE"
+      fimSe
+   fimSe
+
+   escrevaL ("DIFERENÇA: ", dif)
+   escrevaL("STATUS: ", stat)
+   escrevaL ("-----------------------")
+Fimalgoritmo

@@ -1,0 +1,21 @@
+Algoritmo "soma-de-10-numeros"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Algoritmo que leia 10 números e some-os
+// Autor(a)    : Isac Raiundo
+// Data atual  : 14/01/2021
+Var
+   contador, N, soma : inteiro
+Inicio
+   contador <- 1
+   
+   enquanto (contador <= 10) faca
+      escreva("Escreva o", contador, "º número: ")
+      leia (N)
+      
+      contador <- contador + 1
+      soma <- soma + N
+   fimEnquanto
+   
+   escrevaL ("A soma de todos os números é", soma)
+Fimalgoritmo
