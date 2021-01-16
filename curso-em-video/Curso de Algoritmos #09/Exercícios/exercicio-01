@@ -1,0 +1,36 @@
+Algoritmo "CI"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Um programa que faça uma contagem de X até Y e fazer contagem crescente e decrescente
+// Autor(a)    : Isac Raimundo
+// Data atual  : 15/01/2020
+Var
+   INI, FIM, cont : inteiro
+Inicio
+   escrevaL ("CONTAGEM INTELIGENTE")
+   escrevaL ("--------------------")
+
+   escreva ("Inicio: ")
+   leia (INI)
+
+   escreva ("Fim: ")
+   leia (FIM)
+
+   escrevaL ("-------------------")
+   escrevaL ("  C O N T A N D O  ")
+   escrevaL ("-------------------")
+
+   se (INI < FIM) entao
+      cont <- INI
+      enquanto (cont <= FIM) faca
+         escreva (cont, "..")
+         cont <- cont + 1
+      fimEnquanto
+   senao// (INI > FIM)
+      cont <- INI
+      enquanto (cont >= FIM) faca
+         escreva (cont, "..")
+         cont <- cont - 1
+      fimEnquanto
+   fimSe
+Fimalgoritmo

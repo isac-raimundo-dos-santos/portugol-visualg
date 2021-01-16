@@ -1,0 +1,39 @@
+Algoritmo "E.S.P"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Programa que pede 4 alunos, pergunte nome e nota e mostra qual a melhor nota e o nome da pessoal q tirou a melhor nota
+// Autor(a)    : Isac Raimundo
+// Data atual  : 15/01/2020
+Var
+   alunos, cont, nota, M : real
+   nome, n : caractere
+Inicio
+   escrevaL ("-------------------------")
+   escrevaL (" Escola Santa Paciencia  ")
+   escrevaL ("-------------------------")
+   
+   escreva ("Quantos alunos a turma tem? ")
+   leia (alunos)
+   
+   cont <- 1
+   
+   enquanto (cont <= alunos) faca
+      escrevaL("---------------")
+      escrevaL ("ALUNO", cont)
+      
+      escreva ("Nome do aluno: ")
+      leia(nome)
+      
+      escreva ("Nota de ",  nome, ": ")
+      leia(nota)
+      
+      cont <- cont + 1
+      se (nota > M) entao
+         n <- nome
+         M <- nota
+      fimSe
+   fimEnquanto
+   
+   escrevaL("---------------")
+   escrevaL ("Melhor aproveitamento foi o de ", n, " com a nota", M)
+Fimalgoritmo
