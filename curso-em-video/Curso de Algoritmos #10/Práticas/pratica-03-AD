@@ -1,0 +1,25 @@
+Algoritmo "fatorial"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : fatorial de um número ADICIONAL: fazer isso acontecer muitas vezes
+// Autor(a)    : Isac Raiundo
+// Data atual  : 18/01/2021
+Var
+   C, N, F: inteiro
+   R : caractere
+Inicio
+   repita
+      escreva ("Digite um número: ")
+      leia (N)
+      C <- N
+      F <- 1
+      repita
+         F <- F * C
+         C <- C - 1
+      ate (C < 1)
+      escrevaL ("O valor do fatorial de", N, " é igual a", F)
+      escreva ("Quer continuar? [S/N]: ")
+      leia (R)
+      limpaTela
+   ate (R = "N")
+Fimalgoritmo

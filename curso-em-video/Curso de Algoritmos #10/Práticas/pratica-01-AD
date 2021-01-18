@@ -1,0 +1,18 @@
+Algoritmo "tabu"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : contar de 0 até 10 ADICIONAL: faça uma tabuada de um número qualquer
+// Autor(a)    : Isac Raiundo
+// Data atual  : 18/01/2021
+Var
+   cont, N, S : inteiro
+Inicio
+  cont <- 1
+   escreva ("Qual tabuada deseja ver : ")
+   leia (N)
+   repita
+      S <- cont * N
+      escrevaL (N, " x", cont, " =", S)
+      cont <- cont + 1
+   ate (cont > 10)
+Fimalgoritmo

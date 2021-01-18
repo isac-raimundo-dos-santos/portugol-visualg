@@ -1,0 +1,38 @@
+Algoritmo "es"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   :
+// Autor(a)    : Isac Raiundo
+// Data atual  : 18/01/2021
+Var
+   sexo, R : caractere
+   idade, cabelo : inteiro
+Inicio
+   repita
+      limpaTela
+      escrevaL ("==========================")
+      escrevaL ("    SELETOR DE PESsoAS    ")
+      escrevaL ("==========================")
+
+      escreva ("Qual o Sexo [M/F]: ")
+      leia (sexo)
+
+      escreva ("Qual a idade: ")
+      leia (idade)
+
+      escrevaL ("Qual a cor do Cabelo?")
+      escrevaL ("---------------------")
+      escrevaL ("[1] Preto")
+      escrevaL ("[2] Castanho")
+      escrevaL ("[3] Loiro")
+      escrevaL ("[4] Ruivo")
+      leia (cabelo)
+      
+      escrevaL ("Quer continuar? [S/N]: ")
+      leia (R)
+      
+      sexo <- maiusc(sexo)
+      R <- maiusc(R)
+   ate (R = "N")
+
+Fimalgoritmo

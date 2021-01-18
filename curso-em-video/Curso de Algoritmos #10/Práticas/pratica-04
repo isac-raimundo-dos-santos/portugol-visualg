@@ -1,0 +1,25 @@
+Algoritmo "primo"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : verificar se um numero é ou n primo
+// Autor(a)    : Isac Raiundo
+// Data atual  : 18/01/2021
+Var
+   C, N, ContDiv : inteiro
+Inicio
+   C <- 1
+   ContDiv <- 0
+   escreva ("Digite um número: ")
+   leia (N)
+   repita
+      se (N % C = 0) entao
+         ContDiv <- ContDiv + 1
+      fimSe
+      c <- C + 1
+   ate (C > N)
+   se (ContDiv > 2) entao
+      escrevaL ("O valor", N, " não é primo!")
+   senao
+      escrevaL ("O valor", N, " é primo!")
+   fimSe
+Fimalgoritmo

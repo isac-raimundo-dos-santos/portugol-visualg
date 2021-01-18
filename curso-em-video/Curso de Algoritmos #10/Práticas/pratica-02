@@ -1,0 +1,27 @@
+Algoritmo "quantos-negativos"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : pedir números ao usuário e ver quais deles são negativos
+// Autor(a)    : Isac Raiundo
+// Data atual  : 18/01/2021
+Var
+   num, cont, v, n : inteiro
+Inicio
+   escreva ("Quantos números: ")
+   leia (num)
+   
+   cont <- 1
+   
+   repita
+      escreva ("Digite o", cont, "º valor: ")
+      leia (v)
+      
+      cont <- cont + 1
+      
+      se (v < 0) entao
+         n <- n + 1
+      fimSe
+   ate (cont > num)
+   
+   escreval (n, " números negativos")
+Fimalgoritmo

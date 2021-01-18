@@ -1,0 +1,15 @@
+Algoritmo "0-a-10"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : contar de 0 até 10
+// Autor(a)    : Isac Raiundo
+// Data atual  : 18/01/2021
+Var
+   N : inteiro
+Inicio
+   N <- 0
+   repita
+      escrevaL (N)
+      N <- N + 1
+   ate (N >= 11)
+Fimalgoritmo

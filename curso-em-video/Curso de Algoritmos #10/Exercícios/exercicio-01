@@ -1,0 +1,45 @@
+Algoritmo "super-contador"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : super contador
+// Autor(a)    : Isac Raiundo
+// Data atual  : 18/01/2021
+Var
+   ES, C : inteiro
+Inicio
+   repita
+      escrevaL ("=================")
+      escrevaL ("|    M E N U    |")
+      escrevaL ("=================")
+      escrevaL ("| [1] De 1 a 10 |")
+      escrevaL ("| [2] De 10 a 1 |")
+      escrevaL ("| [3] Sair      |")
+      escrevaL ("=================")
+      leia (ES)
+      
+      escolha ES
+         caso 1
+            limpaTela
+            c <- 1
+            
+            repita
+               escreva (c, "..")
+               c <- c + 1
+            ate (c > 10)
+            
+            escrevaL ("")
+         caso 2
+            limpaTela
+            c <- 10
+            
+            repita
+               escreva (c, "..")
+               c <- c - 1
+            ate (c < 1)
+            
+            escrevaL ("")
+      fimEscolha
+   ate (ES = 3)
+   
+   limpaTela
+Fimalgoritmo
