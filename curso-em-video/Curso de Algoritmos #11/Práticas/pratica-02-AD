@@ -1,0 +1,20 @@
+Algoritmo "0-a-X"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : contar de 0 até X ADICIONAL: contagem regressiva
+// Autor(a)    : Isac Raiundo
+// Data atual  : 21/01/2021
+Var
+   C, N : inteiro
+Inicio
+   escreva ("Digite um número: ")
+   leia (N)
+   
+   se (N % 2= 1) entao
+      N <- N - 1
+   fimSe
+   
+   para C <- N ate 0 passo -2 faca
+      escrevaL (C)
+   fimPara
+Fimalgoritmo

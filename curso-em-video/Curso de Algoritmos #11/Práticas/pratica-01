@@ -1,0 +1,13 @@
+Algoritmo "1-a-10"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : contar de 1 até 10
+// Autor(a)    : Isac Raiundo
+// Data atual  : 21/01/2021
+Var
+   N : inteiro
+Inicio
+   para N <- 1 ate 10 faca
+      escrevaL (N)
+   fimPara
+Fimalgoritmo
