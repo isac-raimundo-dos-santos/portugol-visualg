@@ -1,20 +1,24 @@
 Algoritmo "entre-0-e-10"
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : Gustavo Guanabara
-// Descrição   : leia 6 números e fale quantos deles estão entre 0 e 10
+// Descrição   : leia 6 números e fale quantos deles estão entre 0 e 10 ADICIONAL: exibir a soma entre os números ímpares digitados
 // Autor(a)    : Isac Raimundo
 // Data atual  : 22/01/2021
 Var
-   N, C, A : inteiro
+   N, C, A, S : inteiro
 Inicio
    para C <- 1 ate 6 faca
       escreva ("Escreva o", C, "º número: ")
       leia (N)
 
       se (N >= 0) e (N <= 10) entao
-         A <- A +1
+         A <- A + 1
+         se (N % 2 <> 0) entao
+            S <- S + N
+         fimSe
       fimSe
    fimPara
-   
+
    escrevaL ("Tem", A, " números entre 0 e 10")
+   escrevaL ("E a soma entre eles é de", S)
 Fimalgoritmo

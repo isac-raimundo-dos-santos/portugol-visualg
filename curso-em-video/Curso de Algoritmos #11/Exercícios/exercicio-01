@@ -1,0 +1,16 @@
+Algoritmo "fibonacci"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : sequencia de fibonacci
+// Autor(a)    : Isac Raimundo
+// Data atual  : 22/01/2021
+Var
+   cont, n1, n2 : inteiro
+Inicio
+   n2 <- 1
+   para cont de 1 ate 8 faca
+      Escreva(n1,n2)
+      n1 <- n1 + n2
+      n2 <- n2 + n1
+   FimPara
+FimAlgoritmo

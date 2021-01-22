@@ -1,0 +1,15 @@
+Algoritmo "Combinacoes"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   :
+// Autor(a)    : Isac Raimundo
+// Data atual  : 22/01/2021
+Var
+  C1, C2 : inteiro
+Inicio
+   para C1  := 1 ate 3 faca
+      para C2 := 1 ate 3 faca
+         escrevaL (C1, C2)
+      fimPara
+   fimPara
+Fimalgoritmo

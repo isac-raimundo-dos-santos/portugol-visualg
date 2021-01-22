@@ -1,0 +1,31 @@
+Algoritmo "valores"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : calculador de valores
+// Autor(a)    : Isac Raimundo
+// Data atual  : 22/01/2021
+Var
+   cont, valor, soma, divi5, nulo, par : inteiro
+   media : real
+Inicio
+   para cont de 1 ate 5 faca
+      escreva ("Digite o", cont, "º valor: ")
+      leia (valor)
+      soma <- valor + Soma
+      media <- (soma / 5)
+      se (valor % 5 = 0) entao
+         divi5 <- divi5 + 1
+      fimSe
+      se (valor <= 0) entao
+         nulo <- nulo + 1
+      fimSe
+      se (valor % 2 = 0) entao
+         par <- par + valor
+      fimSe
+   fimPara
+   escrevaL ("A soma entre os valores:", soma)
+   escrevaL ("A media entre os valores:", media)
+   escrevaL ("Valores divisiveis por cinco:", divi5)
+   escrevaL ("Valores nulos: ", nulo)
+   escrevaL ("A soma dos valores pares:", par)
+FimAlgoritmo
