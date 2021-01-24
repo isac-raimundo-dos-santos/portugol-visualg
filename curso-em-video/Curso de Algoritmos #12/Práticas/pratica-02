@@ -5,15 +5,19 @@ Algoritmo "faz-soma-procedimento"
 // Autor(a)    : Isac Raiundo
 // Data atual  : 23/01/2021
 Var
-   X, Y : inteiro
-Procedimento Soma(A, B : inteiro)
+   V : real
+Procedimento ParImpar(A : real)
 Inicio
-   escrevaL ("Recebi o valor ", A)
-   escrevaL ("Recebi o valor ", B)
-   escrevaL ("Recebi o valor ", A + B)
+   se (A % 2 = 0) entao
+      escrevaL ("Par")
+   seNao
+      escrevaL ("Ímpar")
+   fimSe
 FimProcedimento
 Inicio
-   X <- 5
-   Y <- 3
-   Soma (Y, X)
+   escreva ("Digite um valor: ")
+   leia (V)
+   
+   escreva ("Esse número é ")
+   ParImpar(V)
 FimAlgoritmo
