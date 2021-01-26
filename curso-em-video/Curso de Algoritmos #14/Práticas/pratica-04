@@ -1,0 +1,29 @@
+Algoritmo "Ordenando-vortor"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : ordenar vetor
+// Autor(a)    : Isac Raimund
+// Data atual  : 26/01/2021
+Var
+   vet : vetor[1..4] de inteiro
+   i, j, aux : inteiro
+Inicio
+   para i de 1 ate 4 faca
+      escreva("Digite um valor: ")
+      leia(vet[i])
+   fimPara
+   
+   para i de 1 ate 3 faca
+      para j de i + 1 ate 4 faca
+         se (vet[i] > vet[j]) entao
+            aux <- vet[i]
+            vet[i] <- vet[j]
+            vet[j] <- aux
+         fimSe
+      fimPara
+   fimPara
+   
+   para i de 1 ate 4 faca
+      escreva("{", vet[i], " }")
+   fimPara
+Fimalgoritmo
