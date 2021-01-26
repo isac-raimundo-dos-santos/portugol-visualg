@@ -1,0 +1,26 @@
+Algoritmo "C"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : programa que peça X nomes e so receba aqueles que tem a primeira letra do nome como C
+// Autor(a)    : Isac Raimundo
+// Data atual  : 25/01/2021
+Var
+   nome : caractere
+   soC : vetor[1..10] de caractere
+   C, tot : inteiro
+Inicio
+   para C <- 1 ate 10 faca
+      escreva ("Digite seu nome: ")
+      leia (nome)
+      se (copia(maiusc(nome), 1, 1) =  "C") entao
+         tot <- tot + 1
+         soC[tot] <- nome
+      fimSe
+   fimPara
+
+   limpaTela
+   escrevaL ("LISTAGEM FINAL")
+   para C <- 1 ate tot faca
+      escrevaL (soC[C])
+   fimPara
+Fimalgoritmo

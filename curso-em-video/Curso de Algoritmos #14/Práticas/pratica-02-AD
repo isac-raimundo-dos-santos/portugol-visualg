@@ -1,0 +1,55 @@
+Algoritmo "Quantos-pares"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Pedir 7 números ao usuário, e mostra quantos números pares foram digitados e onde se localizam ADICIONAL: mostrar as notas acima da media
+// Autor(a)    : Isac Raimundo
+// Data atual  : 25/01/2021
+Var
+   Nome : vetor[1..4] de caractere
+   M : vetor[1..4] de real
+   MTot, n1, n2 : real
+   C : inteiro
+Inicio
+   para C de 1 ate 4 faca
+      escrevaL ("ALUNO", C)
+      
+      escreva ("Nome: ")
+      leia (Nome[C])
+      
+      escreva ("Primeira nota: ")
+      leia (n1)
+      
+      escreva ("Segunda nota: ")
+      leia (n2)
+      
+      se (n1 > 10) entao
+         n1 <- 10
+      fimSe
+      
+      se (n2 > 10) entao
+         n2 <- 10
+      fimSe
+      
+      M[C] <- (n1 + n2) / 2
+      
+      escrevaL ("==================")
+   fimPara
+   
+   limpaTela
+   escrevaL ("  LISTAGEM DE ALUNOS  ")
+   escrevaL ("----------------------")
+   
+   para C de 1 ate 4 faca
+      escrevaL (Nome[C]:15, M[C]:4:1)
+      MTot <- MTot + (M[C] / 4)
+   fimPara
+   
+   escrevaL ("----------------------")
+   escrevaL (" NOTAS ACIMA DA MEDIA ")
+   escrevaL ("----------------------")
+   para C de 1 ate 4 faca
+      se (M[C] > MTot) entao
+         escrevaL (Nome[C]:15 , M[C]:4:1)
+      fimSe
+   fimPara
+Fimalgoritmo

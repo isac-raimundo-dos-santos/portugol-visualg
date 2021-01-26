@@ -1,0 +1,28 @@
+Algoritmo "Quantos-pares"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Pedir 7 números ao usuário, e mostra quantos números pares foram digitados e onde se localizam
+// Autor(a)    : Isac Raimundo
+// Data atual  : 25/01/2021
+Var
+   V : vetor[1..7] de inteiro
+   C, P : inteiro
+Inicio
+   para C de 1 ate 7 faca
+      escreva ("Escreva o", C, "º número: ")
+      leia(V[C])
+
+      se (V[C] % 2 = 0) entao
+         P <- P + 1
+      fimSe
+   fimPara
+   
+   escrevaL ("Total de", P, " números pares.")
+   escreva ("Números pares se localizam na posição:")
+   
+   para C de 1 ate 7 faca
+      se (V[C] % 2 = 0) entao
+         escreva (C)
+      fimSe
+   fimPara
+Fimalgoritmo
