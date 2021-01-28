@@ -1,0 +1,53 @@
+Algoritmo "Cineminha"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Reserva no cinema
+// Autor(a)    : Isac Raimundo
+// Data atual  : 27/01/2021
+Var
+   B, R, Cadeira : vetor[1..10] de inteiro
+   C, Reserva : inteiro
+   Resp : caractere
+Inicio
+   para C de 1 ate 10 faca
+      B[C] <- C
+   fimPara
+   
+   repita
+      limpaTela
+      para C de 1 ate 10 faca
+         se (B[C] <> R[C]) entao
+            escreva ("[ B", C," ]")
+         seNao
+            escreva ("[ --- ]")
+         fimSe
+      fimPara
+      
+      escrevaL ("")
+      escrevaL ("-----------------------------------------------------------------------")
+
+      escreva ("Reservar a cadeira: B")
+      leia (Reserva)
+      R[Reserva] <- Reserva
+      
+      se (Cadeira[Reserva] = 0) entao
+         escrevaL ("Cadeira [ B", Reserva, " ] RESERVADA!")
+      seNao
+         escrevaL ("ERRO! Cadeira já reservada")
+      fimSe
+      
+      escreva ("Quer reservar outra? [S/N] ")
+      leia (Resp)
+      Resp <- maiusc(Resp)
+      Cadeira[Reserva] <- Reserva
+
+   ate (Resp = "N")
+   limpaTela
+      para C de 1 ate 10 faca
+         se (B[C] <> R[C]) entao
+            escreva ("[ B", C," ]")
+         seNao
+            escreva ("[ --- ]")
+         fimSe
+      fimPara
+Fimalgoritmo
