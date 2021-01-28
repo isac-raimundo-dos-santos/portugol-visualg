@@ -1,0 +1,25 @@
+Algoritmo "Analisador"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : ?
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 24/01/2021
+Var
+   N : caractere
+   C : inteiro
+Inicio
+   escreva ("Digite seu nome: ")
+   leia (N)
+   escrevaL ("Total de letras do seu nome: ", compr(N)) //Mostra o comprimento de N
+   escrevaL ("Seu nome em maisuculas: ", maiusc(N)) //Deixa a variavel em maiuscula
+   escrevaL ("Seu nome em minusculas: ", minusc(N)) //Deixa a variavel em minuscula
+   escrevaL ("A primeira letra do seu nome: ", copia(maiusc(N), 1, 1)) //"Copia" na primeira virgula escolhe a variavel, na segunda mostra de onde é p contar e a ultima mostra quantos conta
+   escrevaL ("A ultima letra do seu nome: ", copia(maiusc(N), compr(N), 1))
+   escrevaL ("Seu nome tem a letra A na posicao: ", pos("A", maiusc(N))) //Inidica a determinada palvra/letra escrita numa variavel
+   escrevaL ("O codigo da letra A: ", asc("A")) //Mostra o codigo de X letra
+   escrevaL ("A letra de codigo 65: ", carac(65)) //Mostra a letra referente ao codigo da mesma
+
+   para C <- compr(N) ate 1 passo -1 faca
+      escreva(copia(maiusc(N), C, 1))
+   fimPara
+Fimalgoritmo

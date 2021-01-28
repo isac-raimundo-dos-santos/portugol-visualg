@@ -1,0 +1,25 @@
+Algoritmo "1+1"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Somar dois valores
+// Autor(a)    : Isac Raimundo
+// Data atual  : 23/01/2021
+Var
+   R, V1, V2 : inteiro
+   
+Funcao Soma(A, B : inteiro) : inteiro
+Inicio 
+   retorne A + B
+FimFuncao
+
+Inicio
+   escreva ("Digite o primeiro valor: ")
+   leia (V1)
+
+   escreva ("Digite o segundo valor: ")
+   leia (V2)
+   
+   R <- Soma(V1, V2)
+
+   escrevaL (V1, " +", V2, " =", R)
+FimAlgoritmo
