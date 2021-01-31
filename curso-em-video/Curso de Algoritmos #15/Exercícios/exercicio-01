@@ -1,0 +1,83 @@
+Algoritmo "Dissecando-Matrizes"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Preencher uma matriz de 4ª ordem, e motra a matriz ou diagonal superior ou triangulo superior ou triangulo inferior ou sair, dependendo da resposta do usuário
+// Autor(a)    : Isac Raimundo dos Santos
+// Data atual  : 31/01/2021
+Var
+   M : vetor[1..4, 1..4] de inteiro
+   C, A, Resp: inteiro
+Inicio
+   para C de 1 ate 4 faca
+      para A de 1 ate 4 faca
+         escreva ("Digite o valor [", C, ",", A, " ]: ")
+         leia (M[C, A])
+      fimPara
+   fimPara
+
+   limpaTela
+
+   repita
+      escrevaL ("MENU DE OPÇÕES")
+      escrevaL ("======================")
+      escrevaL ("[1] Mostrar a Matriz")
+      escrevaL ("[2] Diagonal Principal")
+      escrevaL ("[3] Triangulo Superior")
+      escrevaL ("[4] Triangulo Inferior")
+      escrevaL ("[5] Sair")
+      escreva ("===== OPÇÃO: ")
+      leia (Resp)
+      limpaTela
+
+      escolha (Resp)
+      caso 1
+         para C de 1 ate 4 faca
+            para A de 1 ate 4 faca
+               escreva (M[C, A]:4)
+            fimPara
+            escrevaL
+         fimPara
+         escrevaL
+      caso 2
+         para C de 1 ate 4 faca
+            para A de 1 ate 4 faca
+               se (C = A) entao
+                  escreva (M[C, A]:4)
+               seNao
+                  escreva ("    ")
+               fimSe
+            fimPara
+            escrevaL
+         fimPara
+         escrevaL
+      caso 3
+         para C de 1 ate 4 faca
+            para A de 1 ate 4 faca
+               se (C < A) entao
+                  escreva (M[C, A]:4)
+               seNao
+                  escreva ("    ")
+               fimSe
+            fimPara
+            escrevaL
+         fimPara
+         escrevaL
+      caso 4
+         para C de 1 ate 4 faca
+            para A de 1 ate 4 faca
+               se (C > A) entao
+                  escreva (M[C, A]:4)
+               seNao
+                  escreva ("    ")
+               fimSe
+            fimPara
+            escrevaL
+         fimPara
+         escrevaL
+      outroCaso
+         escrevaL ("Essa opção é INVALIDA!")
+
+      fimEscolha
+   ate (Resp = 5)
+   limpaTela
+Fimalgoritmo

@@ -1,0 +1,48 @@
+Algoritmo "Valores-de-uma-Matriz"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Preencher uma matriz 4x4 e mostrar o Valor da soma da Diagonal Principal, o multiplicação dos valores da segunda linha e o maior número da terceira coluna.
+// Autor(a)    : Isac Raimundo dos Santos
+// Data atual  : 31/01/2021
+Var
+   M : vetor[1..4, 1..4] de inteiro
+   C, A, DiagPrinc, p2L, mV3C : inteiro
+Inicio
+   para C de 1 ate 4 faca
+      p2L <- 1
+      para A de 1 ate 4 faca
+         escreva ("Digite o valor [", C, ",", A, " ]: ")
+         leia (M[C, A])
+         
+         se (C = A) entao
+            DiagPrinc <- DiagPrinc + M[C, A]
+         fimSe
+         
+         p2L <- p2L * M[2, A]
+      fimPara
+   fimPara
+   
+   para C de 1 ate 4 faca
+      se (M[C, 3] > mV3C) entao
+         mV3C <- M[C, 3]
+      fimSe
+   fimPara
+
+   limpaTela
+   escrevaL ()
+   escrevaL ("Matriz:")
+   escrevaL ("------------------")
+
+   para C de 1 ate 4 faca
+      para A de 1 ate 4 faca
+         escreva (M[C, A]:4)
+      fimPara
+      escrevaL ()
+   fimPara
+
+   escrevaL ("------------------")
+
+   escrevaL ("Valor da Soma Diagonal Principal: ", DiagPrinc)
+   escrevaL ("Valor do Produto da 2ª Linha: ", p2L)
+   escrevaL ("Maior valor da 3ª Coluna: ", mV3C)
+Fimalgoritmo
