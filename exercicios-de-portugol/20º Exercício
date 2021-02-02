@@ -1,0 +1,82 @@
+Algoritmo "Vigesimo exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:"Telefonou para a vítima?""Esteve no local do crime?""Mora perto da vítima?""Devia para a vítima?""Já trabalhou com a vítima?" O programa deve no final emitir uma classificação sobre a participação da pessoa no crime. Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente"
+// Autor(a)    : Isac Raimundo
+// Data atual  : 01/02/2021
+Var
+   Resp1, Resp2, Resp3, Resp4, Resp5, nome : caractere
+   Part, idade : inteiro
+
+Procedimento Depart
+Inicio
+   escrevaL ("D E P A R T A M E N T O  D E  P O L Í C I A")
+   escrevaL ("-----------------------------------------------")
+FimProcedimento
+Inicio
+   Depart
+
+   escreva ("Digite seu nome: ")
+   leia (nome)
+
+   escreva ("Digite sua idade: ")
+   leia (idade)
+
+   limpaTela
+   Depart
+
+   escreva ("Telefonou para a vítima? [S/N]: ")
+   leia (Resp1)
+   Resp1 <- maiusc(Resp1)
+   se (Resp1 = "S") entao
+      Part <- Part + 1
+   fimSe
+
+   escreva ("Esteve no local do crime? [S/N]: ")
+   leia (Resp2)
+   Resp2 <- maiusc(Resp2)
+   se (Resp2 = "S") entao
+      Part <- Part + 1
+   fimSe
+
+   escreva ("Mora perto da vítima? [S/N]: ")
+   leia (Resp3)
+   Resp3 <- maiusc(Resp3)
+   se (Resp3 = "S") entao
+      Part <- Part + 1
+   fimSe
+
+   escreva ("Devia para a vítima? [S/N]: ")
+   leia (Resp4)
+   Resp4 <- maiusc(Resp4)
+   se (Resp4 = "S") entao
+      Part <- Part + 1
+   fimSe
+
+   escreva ("Já trabalhou com a vítima? [S/N]: ")
+   leia (Resp5)
+   Resp5 <- maiusc(Resp5)
+   se (Resp5 = "S") entao
+      Part <- Part + 1
+   fimSe
+
+   limpaTela
+   Depart
+   escrevaL
+   escrevaL ("---- STATUS:")
+   escrevaL ("  Nome: ", nome)
+   escrevaL ("  Idade:", idade)
+
+   se (Part = 2) entao
+      escrevaL ("  Classificação: Suspeita")
+   senao
+      se (Part >= 3) e (Part <= 4) entao
+         escrevaL ("  Classificação: Cúmplice")
+      senao
+         se (Part = 5) entao
+            escrevaL ("  Classificação: Assasino")
+         senao
+            escrevaL , ("  Classificação: Inocente")
+         fimSe
+      fimSe
+   fimSe
+Fimalgoritmo
