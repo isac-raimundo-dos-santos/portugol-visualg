@@ -1,0 +1,31 @@
+Algoritmo "Vigesimo primeiro exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações.
+// Autor(a)    : Isac Raimundo
+// Data atual  : 02/02/2021
+Var
+   nome, senha : caractere
+Inicio
+   repita
+   escrevaL ("  CADASTRO  ")
+   escrevaL ("============")
+   
+   escreva ("Nome: ")
+   leia (nome)
+   nome <- maiusc(nome)
+   
+   escreva ("Senha: ")
+   leia (senha)
+   senha <- maiusc(senha)
+   escrevaL ("============")
+   
+   se (nome = senha) entao
+      limpaTela
+      escrevaL ("O NOME NÃO pode ser IGUAL a SENHA!")
+      escrevaL ("============")
+   fimSe
+   
+   ate (nome <> senha)
+   
+   escrevaL ("Cadastrado com sucesso!")
+Fimalgoritmo
