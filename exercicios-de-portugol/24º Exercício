@@ -1,0 +1,22 @@
+Algoritmo "Vigesimo quarto exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   :
+// Autor(a)    : Isac Raimundo
+// Data atual  : 02/02/2021
+Var
+   a, b, ano : real
+Inicio
+   a <- 80000
+   B <- 200000
+   ano <- 0
+   
+   enquanto a < b faca
+      a <- a * 0.03
+      b <- b * 0.015
+      ano <- ano + 1
+   fimEnquanto
+   
+   escrevaL ("país A ultrapassa ou iguala a população do país B em", ano, "anos")
+Fimalgoritmo
+
+//Esse eu n entendi muito bem, mas acho que ta certo

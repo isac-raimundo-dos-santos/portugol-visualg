@@ -1,6 +1,6 @@
-Algoritmo "Vigesimo semana exercicio"
+Algoritmo "Vigesimo terceiro exercicio"
 // Disciplina   : [Linguagem e Lógica de Programação]
-// Descrição   :
+// Descrição   : Faça um programa que leia e valide as seguintes informações: Nome: maior que 3 caracteres Idade: entre 0 e 150 Salário: maior que zero Sexo: 'f' ou 'm' Estado Civil: 's', 'c', 'v', 'd'
 // Autor(a)    : Isac Raimundo
 // Data atual  : 02/02/2021
 Var
@@ -9,7 +9,7 @@ Var
    salario : real
 Inicio
    repita
-   
+
    escreva ("Digite seu nome: ")
    leia (nome)
    tamNome <- compr(nome)
@@ -20,20 +20,53 @@ Inicio
    fimSe
    ate (tamNome > 3)
    limpaTela
-   
+
    repita
    escreva ("Digite sua idade: ")
    leia (idade)
-   se (idaide <= 0) ou (idade > 150) entao
+   se (idade <= 0) ou (idade > 150) entao
+      limpaTela
       escrevaL ("!! DIGITE UM VALOR ENTRE 1 E 150 !!")
       escrevaL ("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
    fimSe
    ate (idade > 0) e (idade <= 150)
    limpaTela
-   
-   escreva ("Digite sei salário: ")
+
+   repita
+   escreva ("Digite seu salário: R$")
    leia (salario)
-   
+   se (salario < 0) entao
+      limpaTela
+      escrevaL ("!! DIGITE UM VALOR MAIOR QUE 0 !!")
+      escrevaL ("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+   fimSe
+   ate (salario > 0)
+   limpaTela
+
+   repita
    escreva ("Digite seu sexo [M/F]:  ")
    leia (sexo)
+   sexo <- maiusc(sexo)
+   se (sexo <> "M") e (sexo <> "F") entao
+      limpaTela
+      escrevaL ("!! MASCULINO ou FEMININO !!")
+      escrevaL ("-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+   fimSe
+   ate (sexo = "M") ou (sexo = "F")
+   limpaTela
+
+   se (sexo = "M") entao
+      sexo <- "Masculino"
+   senao
+      se (sexo = "F") entao
+         sexo <- "Feminino"
+      fimSe
+   fimSe
+   
+   escrevaL ("--- Status:")
+   escrevaL ("Nome: ", nome)
+   escrevaL ("Idade: ", idade)
+   escrevaL ("Salario: R$", salario:4:2)
+   escrevaL ("Sexo: ", sexo)
+   escrevaL ("-----------")
 Fimalgoritmo
