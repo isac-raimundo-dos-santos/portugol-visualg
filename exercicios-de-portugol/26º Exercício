@@ -1,0 +1,18 @@
+Algoritmo "Vigesimo quinto exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Faça um programa que imprima na tela os números de 1 a 20, um abaixo do outro. Depois modifique o programa para que ele mostre os números um ao lado do outro.
+// Autor(a)    : Isac Raimundo
+// Data atual  : 03/02/2021
+Var
+   C : inteiro
+Inicio
+   para C de 1 ate 20 faca
+      escrevaL (C)
+   fimPara
+
+   escrevaL
+   
+   para C de 1 ate 20 faca
+         escreva (C)
+      fimPara
+Fimalgoritmo

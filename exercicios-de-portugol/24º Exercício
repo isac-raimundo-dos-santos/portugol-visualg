@@ -1,8 +1,8 @@
 Algoritmo "Vigesimo quarto exercicio"
 // Disciplina   : [Linguagem e Lógica de Programação]
-// Descrição   :
+// Descrição   : Supondo que a população de um país A seja da ordem de 80000 habitantes com uma taxa anual de crescimento de 3% e que a população de B seja 200000 habitantes com uma taxa de crescimento de 1.5%. Faça um programa que calcule e escreva o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento.
 // Autor(a)    : Isac Raimundo
-// Data atual  : 02/02/2021
+// Data atual  : 03/02/2021
 Var
    a, b, ano : real
 Inicio
