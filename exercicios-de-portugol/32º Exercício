@@ -13,7 +13,10 @@ Inicio
 FimProcedimento
 Var
    tabuada, C : inteiro
+   resp : caractere
 Inicio
+   repita
+   limpaTela
    Tabu()
    escreva ("Qual tabuada você quer: ")
    leia (tabuada)
@@ -21,4 +24,7 @@ Inicio
    para C de 1 ate 10 faca
       escrevaL (C, " x", tabuada, " =", C * tabuada)
    fimPara
+   escrevaL ("Quer continuar? [S/N]: ")
+   leia (resp)
+   ate resp = "N"
 Fimalgoritmo
