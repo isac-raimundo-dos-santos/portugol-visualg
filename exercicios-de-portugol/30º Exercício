@@ -1,0 +1,38 @@
+Algoritmo "Trigesimo exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles.
+// Autor(a)    : Isac Raimundo
+// Data atual  : 07/02/2021
+Var
+   I1, I2, C : inteiro
+Inicio
+   escreva ("Digite um valor inteiro: ")
+   leia (I1)
+
+   escreva ("Digite outro valor inteiro: ")
+   leia (I2)
+
+   se (I1 < I2) entao
+      para C de I1 ate I2 faca
+         se (C % 2 = 0) entao
+            escreva (" X")
+         senao
+            se (C % 2 <> 0) entao
+               escreva (C)
+            fimSe
+         fimSe
+      fimPara
+   senao
+      se (I2 < I1) entao
+         para C de I2 ate I1 faca
+            se (C % 2 = 0) entao
+               escreva (" X")
+            senao
+               se (C % 2 <> 0) entao
+                  escreva (C)
+               fimSe
+            fimSe
+         fimPara
+      fimSe
+   fimSe
+Fimalgoritmo

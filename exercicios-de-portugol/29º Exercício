@@ -1,0 +1,19 @@
+Algoritmo "Vigesimo oitavo exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50.
+// Autor(a)    : Isac Raimundo
+// Data atual  : 07/02/2021
+Var
+   V : vetor[1..50] de inteiro
+   C : inteiro
+Inicio
+   para c de 1 ate 50 faca
+      V[C] <- C
+   fimPara
+   
+   para C de 1 ate 50 faca
+      se (V[C] % 2 <> 0) entao
+         escreva (V[C])
+      fimSe
+   fimPara
+Fimalgoritmo

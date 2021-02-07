@@ -1,1 +1,20 @@
-Faça um programa que leia 5 números e informe o maior número.
+Algoritmo "Vigesimo setimo exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Faça um programa que leia 5 números e informe o maior número.
+// Autor(a)    : Isac Raimundo
+// Data atual  : 03/02/2021
+Var
+   V : vetor[1..5] de inteiro
+   C, maior : inteiro
+Inicio
+   para C de 1 ate 5 faca
+      escreva ("Digite o", C, "º número: ")
+      leia (V[C])
+
+      se (V[C] > maior) entao
+         maior <- V[C]
+      fimSe
+   fimPara
+
+   escrevaL ("O maior número é", maior)
+Fimalgoritmo

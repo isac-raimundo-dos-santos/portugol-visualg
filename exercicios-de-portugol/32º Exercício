@@ -1,0 +1,24 @@
+Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a X
+
+Algoritmo "Trigesimo exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   :
+// Autor(a)    : Isac Raimundo
+// Data atual  : 07/02/2021
+Procedimento Tabu()
+Inicio
+   escrevaL ("================")
+   escrevaL (" T A B U A D A  ")
+   escrevaL ("================")
+FimProcedimento
+Var
+   tabuada, C : inteiro
+Inicio
+   Tabu()
+   escreva ("Qual tabuada você quer: ")
+   leia (tabuada)
+
+   para C de 1 ate 10 faca
+      escrevaL (C, " x", tabuada, " =", C * tabuada)
+   fimPara
+Fimalgoritmo

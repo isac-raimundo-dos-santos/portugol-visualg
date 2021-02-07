@@ -1,0 +1,42 @@
+Algoritmo "Trigesimo exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Altere o programa anterior para mostrar no final a soma dos números.
+// Autor(a)    : Isac Raimundo
+// Data atual  : 07/02/2021
+Var
+   I1, I2, C, total : inteiro
+Inicio
+   escreva ("Digite um valor inteiro: ")
+   leia (I1)
+
+   escreva ("Digite outro valor inteiro: ")
+   leia (I2)
+
+   se (I1 < I2) entao
+      para C de I1 ate I2 faca
+         se (C % 2 = 0) entao
+            escreva (" x")
+         senao
+            se (C % 2 <> 0) entao
+               escreva (C)
+               total <- total + C
+            fimSe
+         fimSe
+      fimPara
+   senao
+      se (I2 < I1) entao
+         para C de I2 ate I1 faca
+            se (C % 2 = 0) entao
+               escreva (" x")
+            senao
+               se (C % 2 <> 0) entao
+                  escreva (C)
+                  total <- total + C
+               fimSe
+            fimSe
+         fimPara
+      fimSe
+   fimSe
+   escrevaL
+   escrevaL ("A soma dos ímpares:", total)
+Fimalgoritmo
