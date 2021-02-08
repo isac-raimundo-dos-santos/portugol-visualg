@@ -1,8 +1,6 @@
-Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a X
-
-Algoritmo "Trigesimo exercicio"
+Algoritmo "Trigesimo segundo exercicio"
 // Disciplina   : [Linguagem e Lógica de Programação]
-// Descrição   :
+// Descrição   : Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a X
 // Autor(a)    : Isac Raimundo
 // Data atual  : 07/02/2021
 Procedimento Tabu()
@@ -21,10 +19,16 @@ Inicio
    escreva ("Qual tabuada você quer: ")
    leia (tabuada)
 
+   limpaTela
+   Tabu()
+
    para C de 1 ate 10 faca
-      escrevaL (C, " x", tabuada, " =", C * tabuada)
+      escrevaL (tabuada, " X", C:3, " =", C * tabuada)
    fimPara
+   
    escrevaL ("Quer continuar? [S/N]: ")
    leia (resp)
+   resp <- maiusc(resp)
+
    ate resp = "N"
 Fimalgoritmo
