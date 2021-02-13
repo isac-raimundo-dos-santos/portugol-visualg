@@ -1,0 +1,18 @@
+Algoritmo "Trigesimo setimo exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Faça um programa que calcule o fatorial de um número inteiro fornecido pelo usuário. Ex.: 5!=5.4.3.2.1=120
+// Autor(a)    : Isac Raiundo
+// Data atual  : 12/02/2021
+Var
+   C, N, F: inteiro
+Inicio
+   escreva ("Digite um número: ")
+   leia (N)
+   C <- N
+   F <- 1
+   repita
+      F <- F * C
+      C <- C - 1
+   ate (C < 1)
+   escrevaL ("O valor do fatorial de", N, " é igual a", F)
+Fimalgoritmo

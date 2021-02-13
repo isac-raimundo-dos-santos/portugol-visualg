@@ -1,0 +1,27 @@
+Algoritmo "Trigesimo quarto exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade de números pares e a quantidade de números impares.
+// Autor(a)    : Isac Raimundo
+// Data atual  : 12/02/2021
+Var
+   C, par, impar : inteiro
+   N : vetor[1..10] de inteiro
+Inicio
+   para C de 1 ate 10 faca
+      limpaTela
+      escrevaL ("==DIGITE NÚMEROS INTEIROS==")
+      escreva ("     Digite o", C, "º número: ")
+      leia (N[C])
+
+      se (N[C] % 2 = 0) entao
+         par <- par + 1
+      senao
+         se (N[C] % 2 <> 0) entao
+            impar <- impar + 1
+         fimSe
+      fimSe
+   fimPara
+
+   escrevaL ("Total de números pares:", par)
+   escrevaL ("Total de números impares:", impar)
+Fimalgoritmo

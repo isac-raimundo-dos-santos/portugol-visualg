@@ -1,0 +1,15 @@
+Algoritmo "Trigesimo sexto exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : A série de Fibonacci é formada pela seqüência 0,1,1,2,3,5,8,13,21,34,55,... Faça um programa que gere a série até que o valor seja maior que 500.
+// Autor(a)    : Isac Raimundo
+// Data atual  : 12/02/2021
+Var
+   cont, n1, n2 : inteiro
+Inicio
+   n2 <- 1
+   para cont de 1 ate 8 faca
+      Escreva(n1,n2)
+      n1 <- n1 + n2
+      n2 <- n2 + n1
+   FimPara
+FimAlgoritmo

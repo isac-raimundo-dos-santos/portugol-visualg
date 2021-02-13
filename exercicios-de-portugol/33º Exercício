@@ -1,1 +1,22 @@
- Faça um programa que peça dois números, base e expoente, calcule e mostre o primeiro número elevado ao segundo número. Não utilize a função de potência da linguagem.
+Algoritmo "Trigesimo terceiro exercicio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Descrição   : Faça um programa que peça dois números, base e expoente, calcule e mostre o primeiro número elevado ao segundo número. Não utilize a função de potência da linguagem.
+// Autor(a)    : Isac Raimundo
+// Data atual  : 12/02/2021
+Var
+   base, expoente, i, potencia : inteiro
+Inicio
+   escreva ("Digite a base: ")
+   leia (base )
+
+   escreva ("Digite o expoente: ")
+   leia (expoente)
+
+   potencia <- 1
+
+   para i de 1 até expoente faca
+      potencia <- potencia * base
+   fimPara
+
+   escrevaL (potencia)
+Fimalgoritmo
